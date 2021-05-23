@@ -1,0 +1,338 @@
+@font-face {
+    font-family: PixelArial;
+    src: url("assets/PIXEARG_.TTF");}
+
+body {
+    margin: 0;
+    background-color: #C0C0C0;}
+
+
+p {
+    font-family: Arial;
+    font-size: 0.83vw;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    margin-top: 0; 
+     display:inline;}
+a {
+    font-family: Arial;
+    font-size: 0.83vw;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    margin-top: 0; }
+
+.lowMarginTop {
+    margin-top: 0;
+    margin-bottom: 0;}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1% 19% auto 16% 1%;
+    grid-template-rows: calc(47vh);}
+
+
+.one {
+    grid-column: 2;
+    height: 100vh;}
+
+.two {
+    grid-column: 3;
+    grid-row: 1;
+    height: 97vh;}
+
+.three {
+    grid-column: 4;
+    grid-row: 1 / 3;
+    position:relative;
+    height: 97vh;
+}
+
+.four {
+    grid-column: 3;
+    grid-row: 1;
+
+}
+
+.hm{
+    background: red;
+}
+#mainIcons{
+    opacity:1;
+    visibility: hidden;
+}
+.hidden{
+    visibility: hidden;
+}
+
+.hoverImg{
+     position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-1.2%);
+    margin-left: 0;
+    margin-right: 0;
+    pointer-events: none;
+
+z-index: 29;
+   
+    image-rendering: pixelated;
+}
+.timeBlock{
+    max-width: 4vw;
+}
+
+
+#hookbeachCenterImg, #hookbeachStationImg, #sumpurnDunesImg, #ulksbergImg, #littleCressImg, #buterowImg, #magpieHillImg, #birchIsleImg, #hafsburgMarketImg, #strawturdImg, #adelaineImg, #airportImg, #stonetoothImg, #lowerHafsburgImg, #empireParkImg, #writersHillImg, #priestIslandImg, #tarisleImg, #barrelhornImg, #chestnutParkImg, #thistleGardensImg, #juniperhillImg, #tomstImg, #NEDImg, #jubileeImg, #meadowHeightsImg, #whirlStreetImg, #newCenterImg, #northwallImg, #bastionImg, #harbourImg, #theBoulevardsImg, #oldTownImg, #heapmarketImg, #littleSeagullIslandImg, #imlandImg, #barretImg, #radiotehnikaImg {
+    opacity:0;
+}
+
+.legendRow {
+    /*   display: inline-block*/
+    text-align: center;
+    margin-bottom: 0.2vw;
+    width: 3.6vw;
+
+}
+.legendRow p{
+        display:flex;
+    justify-content: center;
+}
+
+.imgPadding {
+    position: relative;
+    overflow: hidden;
+    margin: 0.6vw;
+        background-color: #4f81ab;
+    box-sizing: border-box;
+    max-height: 100%;
+}
+
+
+
+#boroughs,
+#layers,
+#legends,
+#about {
+    margin-top: 0.66vw;
+}
+
+#explorer{
+    min-height: 8vw;
+    margin-top: 0.66vw;
+}
+.checkBoxPadding div {
+    display: inline-block;
+    padding-bottom: 1vw;
+}
+
+.field-row {
+    background-color: #C0C0C0
+}
+.field-row p{
+    text-overflow: clip;
+}
+#date{
+    font-size: 1.6em;
+    font-family: serif;
+    font-style: italic;
+    font-weight: bold;
+    color: #990099;
+    background-color: #FFFF99;
+}
+
+
+
+#karte {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-1.2%);
+    margin-left: 0;
+    margin-right: 0;
+    pointer-events: none;
+     display: block;
+    image-rendering: pixelated;}
+
+#kopsiluets {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    left: 50%;
+
+    transform: translateX(-50%) translateY(-1.2%);
+    margin-left: 0;
+    margin-right: 0;
+    pointer-events: none;
+     display: block;
+    opacity: 0;
+    image-rendering: pixelated;
+z-index: 3;}
+
+.overlay {
+    position: relative;
+    max-width: 97%;
+    max-height: 97vh;
+    z-index: 3;
+    image-rendering: pixelated;
+}
+
+#basis::before{
+    background-color: rgba(255,255,255,.5);
+    content: '';
+    position: absolute;
+    z-index: 2000;
+    box-shadow: inset 0px 11px 8px -10px black, inset 0px -11px 8px -10px black;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;}
+
+#basis{
+   position: relative;
+    z-index: 2000;}
+
+#basis iframe{
+    display:block;
+    position: absolute;
+    z-index: 7;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+      opacity: 0;
+    z-index: 5;}
+
+#basis::before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    box-shadow: inset 10px 10px 10px black,  inset 10px 10px 10px black;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;}
+
+#basisAndIcons {
+    display:block;
+    position: absolute;
+box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    z-index: 8;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+      opacity: 0;
+    z-index: 7;
+}
+
+#basis:hover{
+  opacity: 0;}
+#basisAndIcons:hover {
+  opacity: 1;}
+
+#basisAndIconsEdge{
+        box-shadow: inset 0px 11px 8px -10px black, inset 0px -11px 8px -10px black;
+}
+
+
+.boroughMenu {
+    display: inline-block;
+    width: 100%;}
+
+.o1-1, .o1-2,.o1-3,.o1-4,.o1-5,.o1-6,,o1-65,.o1-7,.o1-8,.o1-9,.o1-10,.o1-11,.o1-12,.o1-13,.o1-14,.o1-15,.o1-16,.o1-17,.o2-1,.o2-2,.o2-3,.o2-4,.o2-5,.o2-6,.o2-7,.o2-8,.o2-9,.o2-10,.o2-11,.o2-12,.o2-13,.o2-14,.o2-15,.o2-16,.o2-17,.o2-18,.o2-19,.o2-20{
+    padding-bottom: 1em;
+    margin-bottom: 0em;}
+
+#withIconCO{
+    opacity: 0;
+    pointer-events: none;}
+#noIconCO{
+    opacity: 1;
+    pointer-events: none;}
+
+#banner{
+    max-width: 100%;
+    padding-top: 1vw;}
+
+.red {
+    float: left;
+    width: 50%;}
+
+.blue {
+    width: 50%;
+    float: right;}
+
+.legendIcon {
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(0.8, 0.8) translateY(0.2vw);}
+
+.legendWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(3vw, auto);
+}
+#popUp{
+    position: absolute;
+    top:21%;
+    left:58%;
+    z-index: 200;
+border: solid #999;
+border-width: 0.1vw;
+  animation: fadein 2s;
+    display: block;
+ user-select: none;
+    background-color: white;
+    opacity:1;
+    animation-timing-function: steps(1, end);
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.gif{
+position: absolute;
+    top:30%;
+    left:70%;
+    transform: scale(1.3);
+ user-select: none;
+}
+.clockCounter{
+    display: flex;
+     position: relative;
+    padding-bottom: 0.7vw;
+}
+.clock{
+    float:left;
+       position: absolute;}
+
+.noClick{
+    pointer-events: none;
+}
+
+.timeBlock h3{
+  white-space: nowrap;
+    overflow-wrap: normal;}
+
+#counter{
+       position: absolute; 
+    right: 0;}
+.counterWrap{
+position: absolute; 
+right: 0;
+text-align: right;}
+
+.bottom{
+position: absolute; 
+bottom: 0;}
+
+.bottom h3{
+margin-bottom: 5px;}
+
+.pMargin{
+    margin-bottom: 0.4vw;}
